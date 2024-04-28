@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.timeline-editor {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.375rem;
+}
+
+.maingridlayout {
+  display: grid;
+  position: relative;
+  padding: 8px;
+  gap: 8px;
+  grid-template-columns: 70% auto;
+  grid-template-rows: 70% auto;
+  grid-template-areas: 
+    "🤖  🎮"
+    "🎞 .";
+}
+
+.tdmodel {
+  grid-area: 🤖;
+}
+
+.tstyle {
+  grid-area: 🎞;
+}
+
+.acstyle {
+  grid-area: 🎮;
+}
+
+.playerstyle {
+  grid-area: ⏯;
+  position: relative;
+}
